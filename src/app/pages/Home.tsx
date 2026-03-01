@@ -92,12 +92,12 @@ export function Home() {
             >
               <div className="grid grid-cols-2 gap-4">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1664382951070-70a6e4ef8ed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwZGV2ZWxvcGVycyUyMHdvcmtpbmclMjB0b2dldGhlciUyMG9mZmljZXxlbnwxfHx8fDE3NzIzNzgwMzR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  src="https://images.unsplash.com/photo-1624555130296-e551faf8969b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwdGVjaCUyMHRlYW0lMjBtZWV0aW5nJTIwcHJvZmVzc2lvbmFsc3xlbnwxfHx8fDE3NzI0MDA0MjR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                   alt="Team collaboration"
                   className="rounded-2xl shadow-2xl w-full h-48 object-cover"
                 />
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1607971422532-73f9d45d7a47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2Z0d2FyZSUyMGRldmVsb3BlciUyMGNvZGluZyUyMGxhcHRvcHxlbnwxfHx8fDE3NzIyNjYzMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  src="https://images.unsplash.com/photo-1628296499994-70face79ab36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjBjb2RpbmclMjBsYXB0b3AlMjAzMHN8ZW58MXx8fHwxNzcyNDAwNDI1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                   alt="Developer coding"
                   className="rounded-2xl shadow-2xl w-full h-48 object-cover mt-8"
                 />
@@ -236,14 +236,14 @@ export function Home() {
                   </p>
                 </div>
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1693386556810-43d9451bdda5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwdGVjaCUyMHRlYW0lMjBtZWV0aW5nfGVufDF8fHx8MTc3MjM3ODAzN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  src="https://images.unsplash.com/photo-1664382951070-70a6e4ef8ed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjB0ZWFtJTIwd29ya2luZyUyMGNvbXB1dGVycyUyMG9mZmljZXxlbnwxfHx8fDE3NzI0MDA0Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                   alt="Tech team meeting"
                   className="rounded-2xl shadow-xl w-full h-48 object-cover"
                 />
               </div>
               <div className="space-y-6 mt-8">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1514905565314-fea02285fa69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjB3b3Jrc3BhY2UlMjBicmlnaHR8ZW58MXx8fHwxNzcyMzUxMTI5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  src="https://images.unsplash.com/photo-1681164315430-6159b2361615?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2Z0d2FyZSUyMGVuZ2luZWVycyUyMGNvbGxhYm9yYXRpb24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzcyNDAwNDI4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                   alt="Modern workspace"
                   className="rounded-2xl shadow-xl w-full h-48 object-cover"
                 />

@@ -2,6 +2,7 @@ import { Outlet, Link, useLocation } from "react-router";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import logo from "figma:asset/be30ce1be82f052ac507de6d2ea09386a829eff0.png";
 
 export function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -28,9 +29,11 @@ export function Layout() {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
-                <span className="text-white font-bold text-xl">AI</span>
-              </div>
+              <img 
+                src={logo} 
+                alt="Ali Son IT Center Logo" 
+                className="w-12 h-12 object-contain group-hover:scale-105 transition-transform"
+              />
               <div className="flex flex-col">
                 <span className="font-bold text-xl text-gray-900">Ali Son IT Center</span>
                 <span className="text-xs text-gray-600">Transforming Ideas into Reality</span>
@@ -109,9 +112,11 @@ export function Layout() {
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold">AI</span>
-                </div>
+                <img 
+                  src={logo} 
+                  alt="Ali Son IT Center Logo" 
+                  className="w-10 h-10 object-contain"
+                />
                 <span className="font-bold text-lg">Ali Son IT Center</span>
               </div>
               <p className="text-gray-400 text-sm">

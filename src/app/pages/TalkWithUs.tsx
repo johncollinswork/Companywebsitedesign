@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { motion } from "motion/react";
 import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
@@ -247,7 +248,7 @@ export function TalkWithUs() {
                 className="relative rounded-2xl overflow-hidden shadow-2xl"
               >
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1664382951070-70a6e4ef8ed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwZGV2ZWxvcGVycyUyMHdvcmtpbmclMjB0b2dldGhlciUyMG9mZmljZXxlbnwxfHx8fDE3NzIzNzgwMzR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  src="https://images.unsplash.com/photo-1730130054404-c2bd8e7038c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXR1cmUlMjBzb2Z0d2FyZSUyMGVuZ2luZWVyJTIwd29ya3NwYWNlfGVufDF8fHx8MTc3MjQwMDQyNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                   alt="Our development team"
                   className="w-full h-80 object-cover"
                 />
@@ -294,9 +295,4 @@ export function TalkWithUs() {
       </section>
     </div>
   );
-}
-
-function useState<T>(initialValue: T): [T, (value: T) => void] {
-  const [state, setState] = (window as any).React.useState<T>(initialValue);
-  return [state, setState];
 }

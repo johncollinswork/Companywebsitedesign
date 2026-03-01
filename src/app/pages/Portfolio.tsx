@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { ExternalLink, Code2, Smartphone, Sparkles, Cpu } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { useState } from "react";
 
 export function Portfolio() {
   const projects = [
@@ -191,9 +192,4 @@ export function Portfolio() {
       </section>
     </div>
   );
-}
-
-function useState<T>(initialValue: T): [T, (value: T) => void] {
-  const [state, setState] = (window as any).React.useState<T>(initialValue);
-  return [state, setState];
 }
