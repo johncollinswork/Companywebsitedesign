@@ -2,7 +2,7 @@ import { Outlet, Link, useLocation } from "react-router";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import logo from "figma:asset/be30ce1be82f052ac507de6d2ea09386a829eff0.png";
+import logo from "figma:asset/f83d45305fbb583095ff9e3a1bf149f4b53fba13.png";
 
 export function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -32,7 +32,7 @@ export function Layout() {
               <img 
                 src={logo} 
                 alt="Ali Son IT Center Logo" 
-                className="w-12 h-12 object-contain group-hover:scale-105 transition-transform"
+                className="w-20 h-20 object-contain group-hover:scale-105 transition-transform"
               />
               <div className="flex flex-col">
                 <span className="font-bold text-xl text-gray-900">Ali Son IT Center</span>
@@ -115,7 +115,7 @@ export function Layout() {
                 <img 
                   src={logo} 
                   alt="Ali Son IT Center Logo" 
-                  className="w-10 h-10 object-contain"
+                  className="w-16 h-16 object-contain"
                 />
                 <span className="font-bold text-lg">Ali Son IT Center</span>
               </div>

@@ -2,6 +2,11 @@ import { Link } from "react-router";
 import { motion } from "motion/react";
 import { Code2, Smartphone, Sparkles, Cpu, ArrowRight, CheckCircle2, Users, Award, Zap } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import teamCollabImage from "figma:asset/8ce5d7b9d0cfd4d618b822b270b075f9d69b6394.png";
+import developerCodingImage from "figma:asset/24c97a5bd91f4acf614537b07bc811e4dc9532bb.png";
+import developerDeskImage from "figma:asset/a5ab69ad466333d60274d8d23c57d54eb18399e7.png";
+import teamMeetingImage from "figma:asset/3aa81373a692e940c403599e65937040a1649d51.png";
+import threeDWorkspaceImage from "figma:asset/e2fc2572d1eb72afa78017514fb837cf609df80b.png";
 
 export function Home() {
   const services = [
@@ -92,18 +97,18 @@ export function Home() {
             >
               <div className="grid grid-cols-2 gap-4">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1624555130296-e551faf8969b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwdGVjaCUyMHRlYW0lMjBtZWV0aW5nJTIwcHJvZmVzc2lvbmFsc3xlbnwxfHx8fDE3NzI0MDA0MjR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                  alt="Team collaboration"
+                  src={developerDeskImage}
+                  alt="Developer at desk"
                   className="rounded-2xl shadow-2xl w-full h-48 object-cover"
                 />
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1628296499994-70face79ab36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjBjb2RpbmclMjBsYXB0b3AlMjAzMHN8ZW58MXx8fHwxNzcyNDAwNDI1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                  alt="Developer coding"
+                  src={teamMeetingImage}
+                  alt="Team collaboration meeting"
                   className="rounded-2xl shadow-2xl w-full h-48 object-cover mt-8"
                 />
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1750727769935-978b2f48f49f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHwzRCUyMGFuaW1hdGlvbiUyMGRlc2lnbiUyMHN0dWRpb3xlbnwxfHx8fDE3NzIzNzgwMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                  alt="3D Animation"
+                  src={threeDWorkspaceImage}
+                  alt="3D Animation workspace"
                   className="rounded-2xl shadow-2xl w-full h-48 object-cover"
                 />
                 <ImageWithFallback
@@ -236,14 +241,14 @@ export function Home() {
                   </p>
                 </div>
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1664382951070-70a6e4ef8ed0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjB0ZWFtJTIwd29ya2luZyUyMGNvbXB1dGVycyUyMG9mZmljZXxlbnwxfHx8fDE3NzI0MDA0Mjh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  src={teamCollabImage}
                   alt="Tech team meeting"
                   className="rounded-2xl shadow-xl w-full h-48 object-cover"
                 />
               </div>
               <div className="space-y-6 mt-8">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1681164315430-6159b2361615?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2Z0d2FyZSUyMGVuZ2luZWVycyUyMGNvbGxhYm9yYXRpb24lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzcyNDAwNDI4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  src={developerCodingImage}
                   alt="Modern workspace"
                   className="rounded-2xl shadow-xl w-full h-48 object-cover"
                 />
