@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "motion/react";
 import { ExternalLink, Code2, Smartphone, Sparkles, Cpu } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";

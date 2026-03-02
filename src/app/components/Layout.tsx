@@ -1,8 +1,8 @@
+import React from "react";
 import { Outlet, Link, useLocation } from "react-router";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import logo from "figma:asset/f83d45305fbb583095ff9e3a1bf149f4b53fba13.png";
 
 export function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -30,7 +30,7 @@ export function Layout() {
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
               <img 
-                src={logo} 
+                src="/images/logo.png" 
                 alt="Ali Son IT Center Logo" 
                 className="w-20 h-20 object-contain group-hover:scale-105 transition-transform"
               />
@@ -113,7 +113,7 @@ export function Layout() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <img 
-                  src={logo} 
+                  src="/images/logo.png" 
                   alt="Ali Son IT Center Logo" 
                   className="w-16 h-16 object-contain"
                 />
