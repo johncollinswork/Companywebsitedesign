@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
-import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Send, CheckCircle, Linkedin, Github, Globe } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import meetTeamImage from "figma:asset/03673e55d74bef7cde07dd5a927a78da87dfa1f2.png";
+import rafaelPhoto from "figma:asset/c6ea91ffdb9b11371ddca0acedbd19543e6ce7fc.png";
+import { Link } from "react-router";
 
 export function TalkWithUs() {
   const [formData, setFormData] = useState({
@@ -248,7 +251,7 @@ export function TalkWithUs() {
                 className="relative rounded-2xl overflow-hidden shadow-2xl"
               >
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1730130054404-c2bd8e7038c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXR1cmUlMjBzb2Z0d2FyZSUyMGVuZ2luZWVyJTIwd29ya3NwYWNlfGVufDF8fHx8MTc3MjQwMDQyNXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  src={meetTeamImage}
                   alt="Our development team"
                   className="w-full h-80 object-cover"
                 />
@@ -290,6 +293,242 @@ export function TalkWithUs() {
                 </ul>
               </motion.div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Meet Our Senior Developer */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Meet Our Senior Developer</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Rafael Luna will personally handle all consultations and guide your project to success
+            </p>
+          </motion.div>
+
+          {/* Featured Developer - Rafael Luna */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto mb-12"
+          >
+            <div className="bg-gradient-to-br from-blue-600 via-purple-600 to-pink-500 rounded-3xl p-1 shadow-2xl">
+              <div className="bg-white rounded-3xl p-8 md:p-12">
+                <div className="flex flex-col md:flex-row gap-8 items-center">
+                  {/* Photo */}
+                  <div className="relative flex-shrink-0">
+                    <div className="w-48 h-48 rounded-2xl overflow-hidden shadow-xl">
+                      <img
+                        src={rafaelPhoto}
+                        alt="Rafael Luna"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full opacity-20 blur-2xl" />
+                  </div>
+
+                  {/* Info */}
+                  <div className="flex-1 text-center md:text-left">
+                    <h3 className="text-3xl font-bold mb-2">Rafael Luna</h3>
+                    <p className="text-lg text-gray-600 mb-4">Senior Full-Stack Developer & Founder</p>
+                    <p className="text-gray-700 mb-6 leading-relaxed">
+                      Experienced full-stack developer specializing in modern web technologies and scalable solutions.
+                      Rafael personally handles all client consultations and leads the development team to deliver
+                      exceptional results for every project.
+                    </p>
+
+                    {/* Expertise */}
+                    <div className="mb-6">
+                      <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Expertise</h4>
+                      <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                        {["Full-Stack Development", "React & Node.js", "System Architecture", "Team Leadership"].map((skill) => (
+                          <span
+                            key={skill}
+                            className="px-4 py-2 bg-gradient-to-r from-blue-50 to-purple-50 text-gray-700 rounded-full text-sm font-medium border border-purple-100"
+                          >
+                            {skill}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Social Links */}
+                    <div>
+                      <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Connect with Rafael</h4>
+                      <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+                        <a
+                          href="https://www.linkedin.com/in/rafael-luna-work/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-lg hover:shadow-lg transition-all text-sm font-medium"
+                        >
+                          <Linkedin className="w-4 h-4" />
+                          <span>LinkedIn</span>
+                        </a>
+                        <a
+                          href="https://github.com/doyen001"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-gray-800 to-gray-700 text-white rounded-lg hover:shadow-lg transition-all text-sm font-medium"
+                        >
+                          <Github className="w-4 h-4" />
+                          <span>GitHub</span>
+                        </a>
+                        <a
+                          href="https://portfolio-website-five-theta-49.vercel.app/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-lg hover:shadow-lg transition-all text-sm font-medium"
+                        >
+                          <Globe className="w-4 h-4" />
+                          <span>Portfolio</span>
+                        </a>
+                        <a
+                          href="https://t.me/rldev2"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-lg hover:shadow-lg transition-all text-sm font-medium"
+                        >
+                          <Send className="w-4 h-4" />
+                          <span>Telegram</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Supporting Team Members Preview */}
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {[
+              {
+                name: "Sarah Johnson",
+                role: "Senior Mobile Developer",
+                image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&h=400",
+                expertise: ["React Native", "Flutter", "Mobile UX"],
+                socials: {
+                  linkedin: "https://linkedin.com/in/sarahjohnson",
+                  github: "https://github.com/sarahjohnson",
+                  freelancer: "https://freelancer.com/u/sarahjohnson",
+                },
+                gradient: "from-purple-500 to-pink-500",
+              },
+              {
+                name: "Marcus Chen",
+                role: "3D Animation & Motion Designer",
+                image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&h=400",
+                expertise: ["Blender", "Cinema 4D", "Three.js"],
+                socials: {
+                  linkedin: "https://linkedin.com/in/marcuschen",
+                  portfolio: "https://marcuschen.art",
+                  freelancer: "https://freelancer.com/u/marcuschen",
+                },
+                gradient: "from-orange-500 to-red-500",
+              },
+              {
+                name: "David Kumar",
+                role: "Electronics & Embedded Engineer",
+                image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&h=400",
+                expertise: ["Embedded C/C++", "ARM", "IoT Solutions"],
+                socials: {
+                  linkedin: "https://linkedin.com/in/davidkumar",
+                  github: "https://github.com/davidkumar",
+                  portfolio: "https://davidkumar.tech",
+                },
+                gradient: "from-green-500 to-teal-500",
+              },
+            ].map((member, index) => (
+              <motion.div
+                key={member.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all"
+              >
+                <div className="flex flex-col items-center text-center">
+                  <div className="relative mb-4">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-lg"
+                    />
+                    <div className={`absolute inset-0 rounded-full bg-gradient-to-br ${member.gradient} opacity-0 hover:opacity-20 transition-opacity`} />
+                  </div>
+                  <h3 className="font-semibold text-lg mb-1">{member.name}</h3>
+                  <p className="text-sm text-gray-600 mb-4">{member.role}</p>
+
+                  <div className="mb-4 w-full">
+                    <div className="flex flex-wrap gap-2 justify-center">
+                      {member.expertise.map((skill) => (
+                        <span
+                          key={skill}
+                          className="px-3 py-1 bg-white text-gray-700 rounded-full text-xs shadow-sm"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="flex gap-3 pt-4 border-t border-gray-200 w-full justify-center">
+                    {member.socials.linkedin && (
+                      <a
+                        href={member.socials.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`w-10 h-10 rounded-full bg-gradient-to-br ${member.gradient} flex items-center justify-center text-white hover:scale-110 transition-transform`}
+                        title="LinkedIn"
+                      >
+                        <Linkedin className="w-5 h-5" />
+                      </a>
+                    )}
+                    {member.socials.github && (
+                      <a
+                        href={member.socials.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`w-10 h-10 rounded-full bg-gradient-to-br ${member.gradient} flex items-center justify-center text-white hover:scale-110 transition-transform`}
+                        title="GitHub"
+                      >
+                        <Github className="w-5 h-5" />
+                      </a>
+                    )}
+                    {(member.socials.portfolio || member.socials.freelancer) && (
+                      <a
+                        href={member.socials.portfolio || member.socials.freelancer}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`w-10 h-10 rounded-full bg-gradient-to-br ${member.gradient} flex items-center justify-center text-white hover:scale-110 transition-transform`}
+                        title={member.socials.portfolio ? "Portfolio" : "Freelancer"}
+                      >
+                        <Globe className="w-5 h-5" />
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link
+              to="/team"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl"
+            >
+              View Full Team
+            </Link>
           </div>
         </div>
       </section>
