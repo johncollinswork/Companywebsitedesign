@@ -1,8 +1,8 @@
-import React from "react";
 import { Outlet, Link, useLocation } from "react-router";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
+import logo from "figma:asset/f83d45305fbb583095ff9e3a1bf149f4b53fba13.png";
 
 export function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -11,6 +11,7 @@ export function Layout() {
   const navLinks = [
     { path: "/", label: "Home" },
     { path: "/portfolio", label: "Portfolio" },
+    { path: "/team", label: "Our Team" },
     { path: "/talk-with-us", label: "Talk with Our Senior Developer" },
   ];
 
@@ -30,7 +31,7 @@ export function Layout() {
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
               <img 
-                src="/images/logo.png" 
+                src={logo} 
                 alt="Ali Son IT Center Logo" 
                 className="w-20 h-20 object-contain group-hover:scale-105 transition-transform"
               />
@@ -113,7 +114,7 @@ export function Layout() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <img 
-                  src="/images/logo.png" 
+                  src={logo} 
                   alt="Ali Son IT Center Logo" 
                   className="w-16 h-16 object-contain"
                 />
@@ -128,7 +129,8 @@ export function Layout() {
               <ul className="space-y-2 text-gray-400 text-sm">
                 <li><Link to="/" className="hover:text-white transition-colors">Home</Link></li>
                 <li><Link to="/portfolio" className="hover:text-white transition-colors">Portfolio</Link></li>
-                <li><Link to="/talk-with-us" className="hover:text-white transition-colors">Talk with Us</Link></li>
+                <li><Link to="/team" className="hover:text-white transition-colors">Our Team</Link></li>
+                <li><Link to="/talk-with-us" className="hover:text-white transition-colors">Talk with Our Senior Developer</Link></li>
               </ul>
             </div>
             <div>

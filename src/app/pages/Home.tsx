@@ -1,8 +1,12 @@
-import React from "react";
 import { Link } from "react-router";
 import { motion } from "motion/react";
 import { Code2, Smartphone, Sparkles, Cpu, ArrowRight, CheckCircle2, Users, Award, Zap } from "lucide-react";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import teamCollabImage from "figma:asset/03673e55d74bef7cde07dd5a927a78da87dfa1f2.png";
+import developerCodingImage from "figma:asset/24c97a5bd91f4acf614537b07bc811e4dc9532bb.png";
+import developerDeskImage from "figma:asset/a5ab69ad466333d60274d8d23c57d54eb18399e7.png";
+import teamMeetingImage from "figma:asset/3aa81373a692e940c403599e65937040a1649d51.png";
+import threeDWorkspaceImage from "figma:asset/e2fc2572d1eb72afa78017514fb837cf609df80b.png";
 
 export function Home() {
   const services = [
@@ -93,17 +97,17 @@ export function Home() {
             >
               <div className="grid grid-cols-2 gap-4">
                 <ImageWithFallback
-                  src="/images/developer-desk.png"
+                  src={developerDeskImage}
                   alt="Developer at desk"
                   className="rounded-2xl shadow-2xl w-full h-48 object-cover"
                 />
                 <ImageWithFallback
-                  src="/images/team-meeting.png"
+                  src={teamMeetingImage}
                   alt="Team collaboration meeting"
                   className="rounded-2xl shadow-2xl w-full h-48 object-cover mt-8"
                 />
                 <ImageWithFallback
-                  src="/images/3d-workspace.png"
+                  src={threeDWorkspaceImage}
                   alt="3D Animation workspace"
                   className="rounded-2xl shadow-2xl w-full h-48 object-cover"
                 />
@@ -237,14 +241,14 @@ export function Home() {
                   </p>
                 </div>
                 <ImageWithFallback
-                  src="/images/team-collab.png"
+                  src={teamCollabImage}
                   alt="Tech team meeting"
                   className="rounded-2xl shadow-xl w-full h-48 object-cover"
                 />
               </div>
               <div className="space-y-6 mt-8">
                 <ImageWithFallback
-                  src="/images/developer-coding.png"
+                  src={developerCodingImage}
                   alt="Modern workspace"
                   className="rounded-2xl shadow-xl w-full h-48 object-cover"
                 />
